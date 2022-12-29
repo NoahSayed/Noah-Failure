@@ -1,8 +1,18 @@
-
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import Login from "./components/Login";
 function App() {
   return (
     <div className="App">
-     <h2>HELLO FAILURE RESTART THE FUCKIN GAME!!!!!!!!</h2>
+     <Router>
+        <Switch> {/* element={<Home />} />*/}
+       
+          <Route exact path="/">
+           
+          <Login  />
+          </Route>
+         
+        </Switch>
+      </Router> 
     </div>
   );
 }
